@@ -12,9 +12,9 @@ submitForm.addEventListener("submit", (e) => {
   }
   const result = checkExpression(expressionType, expression);
   if (result) {
-    showMessage("success", "Expression is correct");
+    showMessage("success", `${expressionType} is correct`);
   } else {
-    showMessage("error", "Expression is incorrect");
+    showMessage("error", `${expressionType} is not correct`);
   }
 });
 
