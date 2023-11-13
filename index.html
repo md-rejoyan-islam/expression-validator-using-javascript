@@ -19,6 +19,21 @@
       <div
         class="card p-4 border border-zinc-200 rounded-md max-w-[550px] mx-auto"
       >
+        <!-- message show  -->
+        <div>
+          <p
+            class="p-2 rounded-md px-4 items-center text-white text-center flex justify-between hidden"
+            id="error"
+          >
+            <span id="errorMessage">Hello</span>
+            <button
+              class="py-1 px-2 rounded-md bg-red-600"
+              onclick="messageHide()"
+            >
+              X
+            </button>
+          </p>
+        </div>
         <form id="form-submit">
           <div class="my-3">
             <label for="" class="py-2 block text-[17px]"
