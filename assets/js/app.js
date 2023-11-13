@@ -23,7 +23,7 @@ const expressionPattern = {
   email: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/,
   phone: /(^([+]{1}[8]{2}|0088)?(01){1}[1-9]{1}\d{8})$/,
   url: /^(http|https):\/\/(www\.)?[a-zA-Z0-9]+\.[A-Za-z]+$/,
-  jsFile: /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/,
+  jsFile: /([a-zA-Z0-9\s_\\.\-\(\):])+(.js)$/,
   image:
     /([a-zA-Z0-9\s_\\.\-\(\):])+(.jpg|.png|.gif|.webp|.jpeg|.svg|.gif|.avif)$/,
   hex: /^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/,
