@@ -13,5 +13,5 @@ Here User can validate email,bd phone number, URL, Hex code, image, JavaScript f
 
 ## Necessary Link
 
-<a href="">Live Preview </a>
+<a href="">Live Preview </a> <br>
 <a href="">GitHub</a>
