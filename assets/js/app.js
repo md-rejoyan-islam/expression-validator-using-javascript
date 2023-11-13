@@ -20,10 +20,13 @@ submitForm.addEventListener("submit", (e) => {
 
 // expression pattern
 const expressionPattern = {
-  email: /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/,
-  phone: /^(\+98|0)?9\d{9}$/,
+  email: /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/,
+  phone: /(^([+]{1}[8]{2}|0088)?(01){1}[1-9]{1}\d{8})$/,
   url: /^(http|https):\/\/(www\.)?[a-zA-Z0-9]+\.[A-Za-z]+$/,
-  jsFile: /^([a-zA-Z0-9\s_\\.\-:])+(.js)$/,
+  jsFile: /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/,
+  image:
+    /([a-zA-Z0-9\s_\\.\-\(\):])+(.jpg|.png|.gif|.webp|.jpeg|.svg|.gif|.avif)$/,
+  hex: /^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/,
 };
 
 //expressions types
@@ -35,6 +38,12 @@ function checkExpression(type, value) {
       return expressionPattern.phone.test(value);
     case "url":
       return expressionPattern.url.test(value);
+    case "jsFile":
+      return expressionPattern.jsFile.test(value);
+    case "image":
+      return expressionPattern.image.test(value);
+    case "hex":
+      return expressionPattern.hex.test(value);
   }
 }
 
