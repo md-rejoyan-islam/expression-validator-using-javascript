@@ -1,17 +1,20 @@
 ## Expression Validator Using JavaScript
 
-### Description
+Here User can validate Email Address, Bangaladeshi Phone Number, URL, Hex code, Image, JavaScript file. If expression isn't right ,then show an error
 
-Here User can validate email,bd phone number, URL, Hex code, image, JavaScript file. If expression isn't right ,then show an error
-
-### Using
+## Using
 
 - HTML:5
 - Tailwind CSS
 - JavaScript
 - Regex
 
+## Clone Repository
+
+```javascript
+git clone https://github.com/RejoyanIslam/expression-validator-using-javascript
+```
+
 ## Necessary Link
 
-<a href="https://rejoyanislam.github.io/expression-validator-using-javascript/">Live Preview </a> <br>
-<a href="https://github.com/RejoyanIslam/expression-validator-using-javascript">GitHub</a>
+[Live Preview](https://md-rejoyan-islam.github.io/expression-validator-using-javascript/) <br>

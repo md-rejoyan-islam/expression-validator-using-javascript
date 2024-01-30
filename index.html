@@ -11,15 +11,15 @@
     />
     <title>Expression Validator</title>
   </head>
-  <body>
-    <header class="my-5">
+  <body class="min-h-screen flex items-center flex-col py-10 justify-center">
+    <header>
       <h1 class="text-3xl font-bold py-3 text-center">Expression Validator</h1>
     </header>
 
     <!-- main part  -->
-    <main class="w-full my-8 px-4">
+    <main class="w-full pt-4 px-4">
       <div
-        class="card p-4 border border-zinc-200 rounded-md max-w-[550px] mx-auto"
+        class="card shadow-md p-4 border border-zinc-200 rounded-md max-w-[550px] mx-auto"
       >
         <!-- message show  -->
         <div>
@@ -38,11 +38,11 @@
         </div>
         <form id="form-submit">
           <div class="my-3">
-            <label for="" class="py-2 block text-[17px]"
+            <label for="expressionType" class="py-2 block text-[17px] font-bold"
               >Select your Expression Type</label
             >
             <select
-              id=""
+              id="expressionType"
               class="py-2 px-4 rounded-md border border-zinc-200 hover:outline-none w-full"
               name="expressionType"
             >
@@ -60,7 +60,7 @@
               type="text"
               name="expression"
               placeholder="Enter Your Expression"
-              class="py-2 px-4 rounded-md focus:outline-none border border-zinc-200 w-full focus:border-blue-100 focus:border-4"
+              class="h-11 py-2 px-4 rounded-md focus:outline-none border border-zinc-200 w-full focus:border-blue-100 focus:border-4"
             />
           </div>
           <div class="my-3">
