@@ -1,4 +1,4 @@
-## Expression Validator Using JavaScript
+## Expression Validator Using JavaScript Regex
 
 Here User can validate Email Address, Bangaladeshi Phone Number, URL, Hex code, Image, JavaScript file. If expression isn't right ,then show an error
 
